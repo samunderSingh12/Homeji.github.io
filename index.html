@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxy Aesthetic Start Page</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1a1a2e;
+            color: #eaeaea;
+            font-family: 'Inter', Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #e94560;
+            text-transform: uppercase;
+        }
+
+        .container {
+            background-color: #161625;
+            padding: 40px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+            max-width: 500px;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 15px;
+            font-size: 1rem;
+            border: none;
+            outline: none;
+            background-color: #252540;
+            color: #eaeaea;
+            box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.4);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .search-box input:focus {
+            background-color: #2e2e50;
+            box-shadow: inset 0px 6px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .quick-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .quick-links a {
+            text-decoration: none;
+            text-align: center;
+            padding: 15px;
+            font-size: 1rem;
+            background-color: #252540;
+            color: #e94560;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .quick-links a:hover {
+            background-color: #e94560;
+            color: #161625;
+            box-shadow: 0px 8px 16px rgba(233, 69, 96, 0.5);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #888888;
+            text-align: center;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #e94560;
+        }
+
+        footer a:hover {
+            color: #ff577f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome</h1>
+        <div class="search-box">
+            <form action="https://www.google.com/search" method="GET">
+                <input type="text" name="q" placeholder="Search something...">
+            </form>
+        </div>
+        <div class="quick-links">
+            <a href="https://github.com" target="_blank">GitHub</a>
+            <a href="https://notion.so" target="_blank">Notion</a>
+            <a href="https://duckduckgo.com" target="_blank">DuckDuckGo</a>
+            <a href="https://www.reddit.com" target="_blank">Reddit</a>
+        </div>
+    </div>
+    <footer>
+        Crafted by <a href="https://github.com">You</a> | Boxy Aesthetic Vibes
+    </footer>
+</body>
+</html>
